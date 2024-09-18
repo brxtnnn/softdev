@@ -1,0 +1,274 @@
+/* UNIVERSAL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: beige;
+}
+
+/* NAVIGATION BAR */
+nav{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navigation-bar{
+    background-color: lightblue;
+    padding: 5px;
+    margin: 0;
+    height: 70px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    position: relative;
+    right: 200px;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+li{
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;                 
+}
+
+.nav-list{
+    overflow: hidden;
+}
+
+.nav-list a:hover{
+    color: black;
+    border-top: 6px solid #f9f6ef;
+    border-bottom: 6px solid #f9f6ef;
+    animation-delay: 3s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-list a{
+    color: #000;
+    text-decoration-line: none;
+    padding: 2px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Logout button styles */
+#logout-btn {
+    position: absolute; /* Position it absolutely within the header */
+    right: 20px; /* Distance from the right edge of the header */
+    top: 20px; /* Distance from the top edge of the header */
+    background-color: white; /* Button background color */
+    color: #ff4500; /* Button text color */
+    border: none; /* Remove border */
+    padding: 5px 10px; /* Padding inside button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+#logout-btn:hover {
+    background-color: #e63900; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+
+
+/* HEADER */
+#section-home{
+    height: 100vh;
+    padding-top: 70px;
+}
+
+.main-header h1{
+    text-align: center;
+    letter-spacing: 10px;
+    padding: 5px;
+    font-size: 50px;
+    flex-wrap: wrap;
+}
+
+.main-header h2{
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 10px;
+    letter-spacing: 2px;
+}
+
+.main-header img{
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+    padding: 3px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-header p{
+    display: block;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    /* display: flex; 
+    justify-content: center; */
+}
+
+.main-header a{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    text-decoration: none;
+    color: #ffc107;
+}
+
+.typewriter{
+    position: relative;
+}
+
+.typewriter::after{
+    content: '|';
+    position: absolute;
+    right: 0;
+    color:black;
+    width: 100%;
+    background-color: beige;
+    animation: typing 2.5s steps(30) alternate infinite;
+}
+
+@keyframes typing{
+    to{
+        width: 0;
+    }
+}
+
+/* SECTION 1 (ABOUT) */
+#section-about{
+    height: 100vh;
+    padding-top: 70px;
+}
+
+.about h2{
+    text-align: center;
+    background-color: lightblue;
+
+}
+
+.about-statement p{
+    
+    color: black;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.vision-statement {
+    margin: 15px;
+    color:red;
+    text-align: center;
+}
+
+.vision-statement p{
+    margin: 15px;
+    text-align: center;
+}
+
+.mission-statement h3{
+    margin: 15px;
+    color: red;
+    text-align: center;
+}
+
+.mission-statement p{
+    margin: 15px;
+    text-align: center;
+}
+
+.goals-statement h3{
+    margin: 15px;
+    color: red;
+    text-align: center;
+}
+
+.goals-statement p{
+    margin: 15px;
+    text-align: center;
+}
+
+
+
+/* SECTION 4 (CONTACT)*/
+#section-contact{
+    height: 100vh;
+    padding-top: 70px;
+}
+
+.contact h2{
+    text-align: center;
+    background-color: lightblue;
+}
+
+fieldset{
+    text-align: center;
+    margin: auto;
+    border-color: lightblue;
+    width: 1050px;
+    border-style: double;
+    border-width: 5px;
+}
+
+legend{
+    color: black;
+    font-size: 30px;
+    text-align: left;
+}
+
+
+/* FOOTER */
+.main-footer{
+    background-color: rgb(76, 163, 221);
+    height: 60px;
+    padding: 0px;
+    margin: 0;
+    position: relative;
+}
+
+.list-footer{
+    text-decoration-line: none;
+    margin: auto;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+.list-footer a{
+    padding: 10px;
+}
+
+.list-footer img{
+    width: 30px;
+    text-decoration-line: none;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* MEDIA QUERY */

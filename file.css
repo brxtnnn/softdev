@@ -1,0 +1,149 @@
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+  }
+  
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Place behind the container */
+    background: linear-gradient(
+      135deg,
+      #d375a1,
+      #66a3ff
+    ); /* Deep to light blue gradient */
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #003366; /* Dark blue for heading */
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  #upload-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  #file-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #003366; /* Dark blue border for file input */
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: border-color 0.3s;
+    background-color: #e6f2ff; /* Light blue background for file input */
+  }
+  
+  #file-input:focus {
+    outline: none;
+    border-color: #00509e; /* Medium blue on focus */
+    background-color: #cce0ff;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #003366; /* Dark blue background for button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+  }
+  
+  button i {
+    margin-right: 5px;
+  }
+  
+  button:hover {
+    background-color: #00509e; /* Medium blue on hover */
+    transform: translateY(-2px);
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 18px;
+    color: #003366; /* Dark blue for loading indicator */
+    margin-bottom: 20px;
+  }
+  
+  #uploaded-files {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .file-item {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    border: 2px solid #003366; /* Dark blue border for file items */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.3s;
+  }
+  
+  .file-item:hover {
+    transform: scale(1.05);
+    background-color: #e6f2ff; /* Light blue background on hover */
+  }
+  
+  .file-item img {
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  
+  .file-item p {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #343a40;
+  }
+  
+  .file-item .remove-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    display: none; /* Initially hidden */
+  }
+  
+  .file-item:hover .remove-btn {
+    display: block; /* Show on hover */
+  }

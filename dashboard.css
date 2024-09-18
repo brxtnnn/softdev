@@ -1,0 +1,119 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background color */
+    color: #333; /* Dark text color */
+}
+
+/* Header styles */
+header {
+    background: #ff4500; /* Header background color */
+    color: white; /* Header text color */
+    padding: 20px; /* Padding around header */
+    text-align: center; /* Center align text */
+    position: relative; /* Position relative for absolute positioning of logout button */
+}
+
+.home-content {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+}
+
+.profile-picture {
+    flex: 1; /* Take up one part of the space */
+    text-align: center; /* Center align the image */
+}
+
+.profile-picture img {
+    width: 150px; /* Set a fixed width for the profile picture */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.introduction {
+    flex: 2; /* Take up two parts of the space */
+    padding-left: 20px; /* Space between image and text */
+    text-align: justify;
+}
+
+.introduction h3 {
+    margin-top: 0; /* Remove top margin from heading */
+}
+
+/* Navigation styles */
+nav {
+    margin-top: 10px; /* Space above navigation */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    display: inline-block; /* Keep nav items inline */
+}
+
+nav ul li {
+    display: inline; /* Display links inline */
+    margin: 0 15px; /* Space between links */
+}
+
+nav ul li a {
+    color: white; /* Link text color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Make links bold */
+}
+
+/* Logout button styles */
+#logout-btn {
+    position: absolute; /* Position it absolutely within the header */
+    right: 20px; /* Distance from the right edge of the header */
+    top: 20px; /* Distance from the top edge of the header */
+    background-color: white; /* Button background color */
+    color: #ff4500; /* Button text color */
+    border: none; /* Remove border */
+    padding: 5px 10px; /* Padding inside button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+#logout-btn:hover {
+    background-color: #e63900; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+
+/* Main content styles */
+main {
+    padding: 20px; /* Padding around main content */
+}
+
+section {
+    margin: 20px 0; /* Space between sections */
+    padding: 20px; /* Padding inside sections */
+    background: white; /* Section background color */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Shadow effect */
+}
+
+/* FOOTER styles*/
+.main-footer{
+    background-color: #ff4500;
+    height: 60px;
+    padding: 0px;
+    margin: 0;
+}
+
+.list-footer{
+    text-decoration-line: none;
+    margin: auto;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+.list-footer a{
+    padding: 10px;
+}
+
+.list-footer img{
+    width: 30px;
+}

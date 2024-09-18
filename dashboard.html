@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Basketball Page</title>
+    
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="dashboard.css"> 
+</head>
+<body>
+    
+<!-- Your existing HTML content goes here -->
+<header>
+        <h1>My Zone Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#files">Files</a></li>
+            </ul>
+            <button id="logout-btn">Logout</button> <!-- Logout Button -->
+        </nav>
+</header>
+
+<main>
+    <section id="home">
+        <h2>Welcome to the Dashboard</h2>
+        <div class="home-content">
+            <div class="profile-picture">
+                <img src="me.jpeg" alt="Your Name" /> <!-- Replace with your actual image path -->
+            </div>
+            <div class="introduction">
+                <h3>About Me</h3>
+                <p>Hello! My name is Braxton Rosario. I am a Fourth Year student. I enjoy play online games, basketball and mangupal ng tao. 
+                This dashboard serves as my personal space to share my work and connect with others.</p>
+                <p>Feel free to explore my files, learn more about me, and reach out if you have any questions!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>This is my about me section of the dashboard.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>This is my contact me section of the dashboard.</p>
+    </section>
+
+    <section id="files">
+        <h2>MY FILES</h2>
+        <p>Upload your files and photos below:</p>
+
+        <!-- File upload form -->
+        <form id="upload-form" enctype="multipart/form-data">
+            <input type="file" id="file-input" name="files[]" multiple accept=".jpg,.jpeg,.png,.pdf,.doc,.docx,.pptx,.xlsx" required />
+            <button type="submit">Upload Files</button>
+        </form>
+
+        <!-- Display uploaded files -->
+        <div id="uploaded-files"></div>
+    </section>
+</main>
+
+<footer class='main-footer'>
+        <div class='list-footer'>
+            <a href='https://www.linkedin.com/in/braxton-rosario-8466602b0/'> 
+                <img src='https://cdn-icons-png.flaticon.com/128/3536/3536505.png' alt='Linkedin Account'> 
+            </a>
+            <a href='https://www.facebook.com/braxton.rosario.2/'>
+                <img src='https://cdn-icons-png.flaticon.com/128/5968/5968764.png' alt='Facebook Account'> 
+            </a>
+            <a href='https://www.instagram.com/xy_braxton'>
+                <img src='https://cdn-icons-png.flaticon.com/128/2111/2111463.png' alt='Instagram Account'> 
+            </a>
+            <a href='https://twitter.com/im_braxxx'>
+                <img src='https://cdn-icons-png.flaticon.com/128/5968/5968958.png' alt='Twitter Account'> 
+            </a>
+            <a href='https://github.com/brxtnnn'>
+                <img src='github.png' alt='Github Account'> 
+            </a>
+        </div>
+</footer>
+
+<script src="script.js"></script> <!-- Link to your external JavaScript file -->
+</body>
+</html>
